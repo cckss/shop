@@ -1,0 +1,44 @@
+<swiper indicator-dots="{{true}}"
+        autoplay="{{true}}" interval="{{2000}}" 
+        duration="{{1000}}">     
+        <block wx:for="{{allProduct.slider_image}}" wx:key="*this">   
+          <swiper-item>
+            <image src="{{item}}"></image>
+          </swiper-item>
+        </block> 
+</swiper>
+<!-- 商品详细信息 -->
+<view class="detail-info">
+  <view class="detail-title">{{allProduct.store_info}}</view>
+<!-- 我是收藏 -->
+<view class="icon-sc">
+  <image src="../../images/11.png"></image>
+  <view>未收藏</view>
+  </view>
+</view>
+<!-- 价格 -->
+<view class="price">
+  <text class="x-price">￥{{allProduct.price}}</text>
+  <text class="y-price">￥{{allProduct.ot_price}}</text>
+</view>
+
+<view class="border"></view>
+
+<view class="send-box">*本产品由品牌商发货</view>
+
+<view class="prduct-detail">
+  <text>商品详情</text>
+</view>
+<rich-text nodes="{{allProduct.description}}"></rich-text>
+<!-- 底部加入购物车 -->
+<view class="footer">
+
+<view class="car-icon" bindtap="toCar">
+<image src="../../images/gwc.png"></image>
+<!-- 右上角的数量 -->
+<text class="num">{{carNum}}</text>
+</view>
+<view class="go-index">前往商城</view>
+<view class="add-car" bindtap="addCar">加入购物车</view>
+<view class="go-buy">前往支付</view>
+</view>

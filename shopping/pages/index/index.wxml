@@ -1,0 +1,24 @@
+<swiper indicator-dots="{{true}}"
+        autoplay="{{true}}" interval="{{2000}}" 
+        duration="{{500}}"circular="true">
+        <block wx:for="{{banner}}" wx:key="*this">   
+          <swiper-item>
+            <image class="banner-img" mode="widthFix" src="{{item.pic}}"></image>
+          </swiper-item>
+        </block>
+</swiper>
+
+<!-- 八个菜单 -->
+<view class="big-menus">
+<view class="menus-item"wx:for="{{menus}}"wx:key="*this"> 
+<image src="{{item.pic}}"></image>
+<view class="menus-detail"><text>{{item.name}}</text></view>
+</view>
+</view>
+
+<!-- 组件可以被重复使用 -->
+
+<view class="product-list">
+<view>商品列表</view>
+<product bindmyevent="toDetail" wx:for="{{productList}}" product="{{item}}" wx:key="*this"></product>
+</view>

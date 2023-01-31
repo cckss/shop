@@ -1,0 +1,16 @@
+<view  class="product-item" bindtap="toHome" data-id="{{product.id}}">
+<view class="item-left">
+<!-- 图片 -->
+<image src="{{product.image}}"></image>
+</view>
+<view class="item-right">
+<!-- 右边详细信息 -->
+<view class="product-title">{{product.store_name}}</view>
+<view class="product-address">广州/佛山</view>
+<view class="product-price">{{product.price}}</view>
+<view class="product-icon">
+  <image src="../../images/gwc.png"></image>
+</view>
+</view>
+</view>
+

@@ -1,0 +1,45 @@
+/* components/product/product.wxss */
+.product-item{
+  height: 200rpx;
+
+  /* 弹性布局 */
+  display: flex;
+  padding: 20rpx 10rpx;
+  border-bottom: 2rpx solid #b3b3b3;
+}
+
+.item-left image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.item-right{
+  /* 剩余空间给我 */
+  flex: 1;
+  height: 200rpx;
+}
+
+.product-title{
+  font-size: 36rpx;
+  color: gray;
+  height: 100rpx;
+  /* 多行文本溢出 */
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /*行数*/
+            -webkit-box-orient: vertical;
+
+}
+.product-address{
+  font-size: 20rpx;
+  color: gray;
+}
+.product-price{
+  color: rgb(192, 71, 71);
+}
+.product-icon image{
+  width: 40rpx;
+  height: 40rpx;
+  float: right;
+}

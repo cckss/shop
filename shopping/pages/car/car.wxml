@@ -1,0 +1,38 @@
+<view class="product">
+
+  <view class="goods" wx:for="{{carList}}">
+    <view class="left">
+      <!-- 选框 -->
+      <radio checked="{{item.checked}}" bindtap="changeCk" data-index="{{index}}" color="#4ba3ff"></radio>
+
+    </view>
+    <view class="right">
+
+      <image src="{{item.slider_image[0]}}"></image>
+      
+      <view class="max-right">
+        <!-- 标题 -->
+        <view class="title">{{item.store_info}}</view>
+
+        <!-- 价格 -->
+        <view class="price">{{item.price}}</view>
+
+        <view class="changeNum">
+          <view class="jian" bindtap="jian" data-index="{{index}}">-</view>
+          <view class="num">{{item.num}}</view>
+          <view class="add" bindtap="add" data-index="{{index}}">+</view>
+        </view>
+        
+      </view>
+      <!-- 删除图片 -->
+        <image bindtap="delete" data-index="{{index}}"class="del" src="../../images/e.png"></image>
+    </view>
+    
+  </view>
+</view>
+
+<!-- 我是结算 -->
+<view class="jiesuan">
+  <view class="all-price">总价格：<text>￥{{allPrice}}</text></view>
+  <view class="go-buy">下单</view>
+</view>

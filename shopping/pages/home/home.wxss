@@ -1,0 +1,28 @@
+/* pages/home/home.wxss */
+swiper-item{
+   width: 200px;
+   height: 200px;
+   background: red;
+}
+swiper-item:nth-child(2){
+  background:blueviolet;
+}
+image{
+  /* 微信小程序用rpx */
+  width: 200rpx;
+}
+.big-box{
+  height: 500rpx;
+  background: pink;
+}
+.item{
+  width: 25%;
+  height: 300rpx;
+  background: skyblue;
+  float: left;
+} 
+.item image{
+  width: 200rpx;
+  float: left;  
+  text-align: center;
+}

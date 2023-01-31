@@ -1,0 +1,106 @@
+/* pages/car/car.wxss */
+.product{
+  padding-bottom: 200rpx;
+}
+.goods{
+  height: 300rpx;
+  background: white;
+  /* 弹性布局 */
+  display: flex;
+  align-items: center;
+  margin: 0 15rpx;
+}
+/* .left{
+  width: 100rpx;
+  background:greenyellow;
+} */
+.right{
+  /* 剩余空间给我 */
+  flex: 1;
+  height: 100%;
+  /* background: skyblue; */
+  /* 弹性布局 */
+  display: flex;
+  /* 相对布局 */
+  position: relative;
+}
+.right image{
+  width: 250rpx;
+  height: 250rpx;
+  margin-top: 25rpx;
+ }
+ .del{
+   width: 60rpx !important;
+   height: 60rpx !important;
+   position: absolute;
+   right: 7rpx;
+   bottom: 11rpx;
+ }
+ .max-right{
+   flex: 1;
+   margin-top: 25rpx;
+   margin-left: 20rpx;
+ }
+ .title{
+  font-size: 36rpx;
+    color: gray;
+    height: 100rpx;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+ }
+ .price{
+   font-size: 44rpx;
+   color: #ff1d97;
+   margin: 12rpx 0;
+ }
+ .changeNum{
+   width: 260rpx;
+   display: flex;
+   color: gray;
+   border:1rpx solid grey;
+ }
+ .changeNum > view{
+   width: 80rpx;
+   height: 70rpx;
+   line-height: 70rpx;
+   text-align: center;
+ }
+ .num{
+   width: 100rpx !important;
+   border-left: 1rpx solid gray;
+   border-right: 1rpx solid gray;
+ }
+
+ .jiesuan{
+   height: 100rpx;
+   background: white;
+   /* 固定定位 */
+   width: 100vw;
+   position: fixed;
+   bottom: 0;
+   display: flex;
+   justify-content: space-between;
+   line-height: 100rpx;
+  /* 盒子模型 */
+  box-sizing: border-box;
+  padding: 0 30rpx;
+
+ }
+
+ .all-price text{
+  color: red;
+ }
+ .go-buy{
+  width: 200rpx;
+  height: 80rpx;
+  background: #ff7e3d;
+  /* 字体剧中 */
+  text-align: center;
+  line-height: 80rpx;
+  color: white;
+  margin-top: 10rpx;
+ }

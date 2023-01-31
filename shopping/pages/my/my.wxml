@@ -1,0 +1,6 @@
+<view class="box">
+<open-data type="userAvatarUrl"></open-data>
+</view>
+<open-data type="userNickName" lang="zh_CN"></open-data>
+<button bindtop="get">点击头像</button>
+<image src="https://s3.bmp.ovh/imgs/2022/06/18/08621956c65aaa9b.jpg"></image>

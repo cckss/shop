@@ -1,0 +1,31 @@
+/* pages/index/index.wxss */
+.banner-img{
+  width: 100%;
+}
+image{
+ /* 微信小程序用rpx */
+ width: 80rpx;
+ height: 80rpx;
+}
+.big-menus{
+/* 清空子盒子浮动造成的影响 父盒子的高度没了 */
+overflow: hidden;
+margin: 20rpx 0;
+}
+.menus-item{
+  width: 25%;
+  /* height: 200xpr; */
+  float: left;
+  background: white;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.menus-item image{
+ width: 80rpx;
+ height: 80xpr;
+ /* padding-top: 50xpr; */
+}
+.menus-detail{
+  margin-bottom: 30rpx;
+}

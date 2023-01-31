@@ -1,0 +1,62 @@
+<swiper indicator-dots="{{true}}"
+        autoplay="{{true}}" interval="{{2000}}" 
+        duration="{{500}}"circular="true">
+        <block>   
+          <swiper-item>
+            我是第一张
+          </swiper-item>
+        </block>
+        <block>         
+          <swiper-item>
+            我是第二张
+          </swiper-item>
+        </block>
+</swiper>
+
+<!-- 独占一行 是一个块元素 -->
+<!-- <view class="box"></view> -->
+<view class="big-box">
+
+<view class="item"> 
+<image mode="widthFix" src="../../images/1.png"></image>
+<text>商品分类</text>
+</view>
+
+<view class="item">
+  <image mode="widthFix" src="../../images/2.png"></image>
+  <text>领优惠劵</text>
+</view>
+<view class="item">
+  <image mode="widthFix" src="../../images/3.png"></image>
+  <text>行业资讯</text>
+</view>
+<view class="item"> 
+  <image mode="widthFix" src="../../images/4.png"></image>
+  <text>我要签到</text>
+</view>
+<view class="item">
+  <image mode="widthFix" src="../../images/5.png"></image>
+  <text>我的收藏</text>
+</view>
+<view class="item">
+  <image mode="widthFix" src="../../images/6.png"></image>
+  <text>秒杀活动</text>
+</view>
+<view class="item">
+  <image mode="widthFix" src="../../images/7.png"></image>
+  <text>地址列表</text>
+</view>
+<view class="item">
+  <image mode="widthFix" src="../../images/8.png"></image>
+  <text>订单列表</text>
+</view>
+</view>
+
+<view>{{name}}</view>
+<!-- 条件 如果里面是false隐藏，true显示 -->
+<view wx:if="{{condition}}">我是同条件判断是否显示用途：用户点击才显示节点
+</view>
+<view wx:for="{{arr}}">{{index}}{{item.name}}{{item.age}}</view>
+<!-- 事件 点击bindtap="方法名字" -->
+<!-- 通过实践传递参数 data-自定义的形参 -->
+<button bindtap="showName" data-name="靓仔">点击显示</button>
